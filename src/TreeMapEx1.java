@@ -10,6 +10,7 @@ public class TreeMapEx1 {
         scores.put(new Integer(95),"신용권");
         scores.put(new Integer(80),"김자바");
 
+        /*TreeMap 검색 관련 메소드*/
         Map.Entry<Integer, String> entry= null;
         entry = scores.firstEntry();
         System.out.println("가장 낮은 점수 : " + entry.getKey()+"-"+entry.getValue());
