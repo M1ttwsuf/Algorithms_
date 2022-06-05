@@ -1,7 +1,8 @@
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
-
+/*stream 특징*/
+/*람다식 사용 // 내부 반복자를 사용한다// 병렬 처리가 쉽다*/
 public class LambdaExpressionsEx {
     public static void main(String[] args){
         List<Students> list = Arrays.asList(
@@ -17,3 +18,9 @@ public class LambdaExpressionsEx {
         });
     }
 }
+
+/* 
+* index -> for
+* iterator -> while
+* internal iterator // 쉬운 병렬처리
+* */
