@@ -2,7 +2,9 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.IntStream;
-
+/* 스트림 요소가 최종 처리되기 전에 중간 단계에서 요소를 정렬해서 
+* 최종 처리 순서를 변경
+* */
 public class SortingEx {
     public static void main(String[] args){
         //숫자 요소일 경우
