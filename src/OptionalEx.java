@@ -34,10 +34,14 @@ public class OptionalEx {
                 .orElse(0.0);
         System.out.println("방법2_평균: "+avg);
 
-        //방법3
+        //방법3: 평균값이 있을 때에만 람다식을 실행한다
         list.stream()
                 .mapToInt(Integer :: intValue)
                 .average()
                 .ifPresent(a-> System.out.println("방법3_평균: "+a));
     }
 }
+/*collection요소가 추가되지 않은 저장된 요소가 없을 경우 처리하는 방법이다
+* 요소가 없을 때 평균값도 있을 수 없기 때문에 
+* 예외를 피하는 방법으로 다음과 같은 세가지 방법을 이용한 것이다
+* */
