@@ -9,8 +9,9 @@ public class ClientEx1 {
         Socket socket = null;
         try{
             socket = new Socket();
-            System.out.println("[연결요청");
+            System.out.println("[연결요청]");
             socket.connect(new InetSocketAddress("localhost",5001));
+            System.out.println("[연결성공]");
 
             byte[] bytes = null;
             String message = null;
