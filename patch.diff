@@ -1,0 +1,32 @@
+From 6ad1b1575e229d795545b7358739a5416b85830f Mon Sep 17 00:00:00 2001
+From: M1ttwsuf <ttwsuf@naver.com>
+Date: Sun, 17 Jul 2022 16:08:56 +0900
+Subject: [PATCH] init
+
+---
+ src/Question.java | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+ create mode 100644 src/Question.java
+
+diff --git a/src/Question.java b/src/Question.java
+new file mode 100644
+index 0000000..ff27e7b
+--- /dev/null
++++ b/src/Question.java
+@@ -0,0 +1,13 @@
++import java.util.Scanner;
++
++/*정수를 읽어서 2진수, 8진수, 16진수로 출력하는 프로그램을 작성하라.*/
++public class Question {
++    public static void main(String[] args){
++    Scanner sc = new Scanner(System.in);
++    int x = sc.nextInt();
++
++        System.out.println(Integer.toBinaryString(x));
++        System.out.println(Integer.toOctalString(x));
++        System.out.println(Integer.toHexString(x));
++    }
++}
+-- 
+2.41.0
+
